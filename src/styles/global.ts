@@ -5,11 +5,14 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: ${props => props.theme.font_family};
   }
 
   body {
-    background-color: ${props => props.theme.colors.cyan};
     font-size: ${props => props.theme.font_size};
-    font-family: ${props => props.theme.font_family};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
   }
 `

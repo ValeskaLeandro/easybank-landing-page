@@ -8,6 +8,7 @@ declare module "styled-components" {
       dark_blue: string,
       lime_green: string,
       cyan: string,
+      gradient: string,
 
       //  Neutral colors
       grayish_blue: string,
