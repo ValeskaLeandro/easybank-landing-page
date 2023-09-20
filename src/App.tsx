@@ -3,6 +3,7 @@ import GlobalStyle from "./styles/global"
 import theme from './styles/theme'
 import NavBar from "./components/NavBar"
 import MainBanner from "./components/MainBanner"
+import Services from "./components/Services"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <GlobalStyle />
       <NavBar />      
       <MainBanner />
+      <Services />
     </ThemeProvider>
   )
 }

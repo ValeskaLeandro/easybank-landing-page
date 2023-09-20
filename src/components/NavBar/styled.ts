@@ -4,6 +4,7 @@ export const Container = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: ${props => props.theme.colors.ligth_gray};
 `
 export const Header = styled.header`
   width: 80vw;
