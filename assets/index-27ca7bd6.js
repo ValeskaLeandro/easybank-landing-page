@@ -360,13 +360,14 @@ Error generating stack: `+i.message+`
     justify-content: center;
   }
 `;function b1(){return y.jsx(J1,{children:y.jsxs("div",{className:"container",children:[y.jsxs("div",{className:"titles",children:[y.jsx(nd,{children:"Why choose Easybank?"}),y.jsx(td,{children:"We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before."})]}),y.jsxs(q1,{children:[y.jsx(rl,{icon:"./icons/icon-online.svg",title:"Online Banking",description:" Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."}),y.jsx(rl,{icon:"./icons/icon-budgeting.svg",title:"Simple Budgeting",description:"See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits."}),y.jsx(rl,{icon:"./icons/icon-onboarding.svg",title:"Fast Onboarding",description:"We don’t do branches. Open your account in minutes online and start taking control of your finances right away."}),y.jsx(rl,{icon:"./icons/icon-api.svg",title:"Open API",description:"  Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."})]})]})})}const e0=te.div`
-  max-width: 300px;
+  max-width: 250px;
   border-radius: 10px;
   overflow: hidden;
   background-color: ${e=>e.theme.colors.white};
 
   .image img {
     width: 100%;
+    max-height: 160px;
   }
   .infos {
     display: flex;
@@ -406,9 +407,13 @@ Error generating stack: `+i.message+`
 `,n0=te.div`
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 80%;
   gap: 1rem;
+
+  @media (max-width: 998px) {
+    flex-wrap: wrap;
+  }
+  
 `;function r0(){return y.jsxs(t0,{children:[y.jsx("div",{className:"title",children:y.jsx(nd,{children:"Latest Articles"})}),y.jsxs(n0,{children:[y.jsx(ll,{img:"./image-currency.jpg",author:"Claire Robinson",title:"Receive money in any currency with no fees",description:"The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"}),y.jsx(ll,{img:"./image-restaurant.jpg",author:"Wilson Hutton",title:"Treat yourself without worrying about money",description:"Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"}),y.jsx(ll,{img:"./image-plane.jpg",author:"Wilson Hutton",title:"Take your Easybank card wherever you go",description:"We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"}),y.jsx(ll,{img:"./image-confetti.jpg",author:"Claire Robinson",title:"Our invite-only Beta accounts are now live!",description:"After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."})]})]})}const l0=te.footer`
   background-color: ${e=>e.theme.colors.dark_blue};
   padding: 3rem 0;
