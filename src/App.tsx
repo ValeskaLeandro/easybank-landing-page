@@ -3,8 +3,6 @@ import GlobalStyle from "./styles/global"
 import theme from './styles/theme'
 import NavBar from "./components/NavBar"
 
-
-
 function App() {
 
   return (
