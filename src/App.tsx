@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar"
 import MainBanner from "./components/MainBanner"
 import Services from "./components/Services"
 import Articles from "./components/Articles"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <MainBanner />
       <Services />
       <Articles />
+      <Footer />
     </ThemeProvider>
   )
 }
