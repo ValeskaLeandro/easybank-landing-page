@@ -1,5 +1,10 @@
 import styled from "styled-components"
 
+export const Container = styled.header`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
 export const Header = styled.header`
   width: 80vw;
   height: 5.625rem;
@@ -44,6 +49,7 @@ export const Nav = styled.nav`
           background: ${props => props.theme.colors.gradient}; 
           opacity: 0; 
           transition: opacity 0.3s;
+          
         }
 
         &:hover{
@@ -66,10 +72,11 @@ export const Nav = styled.nav`
 
     top: 5.625rem;
     width: 100vw;
-    background-color: rgba(1,1,1, .1);    
+    background-color: rgba(1,1,1, .2);    
     height: calc(100vh - 5.625rem);
     transition: all 0.5s ease-in-out;
-    opacity: 0;
+    display: none;
+    z-index: 1;
 
     & ul {      
       flex-direction: column;
@@ -87,8 +94,7 @@ export const Nav = styled.nav`
       }
     }
     &.open-menu {
-      transition: all 0.5s ease-in-out;
-      opacity: 1;
+      display: block;
     }
   }
 `

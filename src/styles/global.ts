@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
   * {
@@ -10,9 +10,13 @@ export default createGlobalStyle`
 
   body {
     font-size: ${props => props.theme.font_size};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+    
   }
 `
+
+export const Description = styled.p`
+  font-weight: 300;
+  color: ${props => props.theme.colors.grayish_blue};
+  font-size: 1.125rem;
+`
+
