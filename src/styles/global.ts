@@ -24,4 +24,8 @@ export const Title = styled.h1`
   font-weight: 400;
   color: ${props => props.theme.colors.dark_blue};
   font-size: 2.5rem;
+
+  @media (max-width: 998px) {
+    text-align: center;
+  }
 `

@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ServicesContainer = styled.div`
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    padding-bottom: 5rem ;
   .container {
     width: 80%;
   }
