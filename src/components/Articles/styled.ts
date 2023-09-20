@@ -17,7 +17,11 @@ export const ArticlesContainer = styled.section`
 export const LastArticles = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 80%;
   gap: 1rem;
+
+  @media (max-width: 998px) {
+    flex-wrap: wrap;
+  }
+  
 `

@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  max-width: 300px;
+  max-width: 250px;
   border-radius: 10px;
   overflow: hidden;
   background-color: ${props => props.theme.colors.white};
 
   .image img {
     width: 100%;
+    max-height: 160px;
   }
   .infos {
     display: flex;
